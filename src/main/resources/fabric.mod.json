@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "destroy",
+  "version": "${version}",
+  "name": "destroy",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "GPL-3.0",
+  "icon": "assets/destroy/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "dev.zac99lol.destroy.client.DestroyClient"
+    ],
+    "main": [
+      "dev.zac99lol.destroy.Destroy"
+    ]
+  },
+  "mixins": [
+    "destroy.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
